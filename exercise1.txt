@@ -1,0 +1,27 @@
+call repeater(3)
+||
+garbage() is call i = 0
+repeater(3) => garbage()
+||
+||garbage() return 
+repeater(3)
+||
+garbage() is call i = 1
+reapeater(3) => gargage()
+||
+||garbage() return
+repearter(3)
+||
+garbage() is call i = 2
+repeater(3) => garbage()
+||
+|| garbage() return
+repeater(3)
+||
+garbage() is call i = 3
+repeater(3) => garbage()
+||
+|| garbage() return
+reapeater(3)
+
+print(repeater(3)) => x = 3

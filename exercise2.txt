@@ -1,0 +1,8 @@
+call fibonacci(5)
+||
+# input in Fibonacci sequence 0 and 1 first so can use it to be F(0) and F(1)
+fib_sequence = [0,1]
+||
+if loop len() > n it break
+while len(fib_sequence) = 2 < n=5
+||
