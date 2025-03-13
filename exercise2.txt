@@ -1,8 +1,40 @@
-call fibonacci(5)
+call f(n)
 ||
-# input in Fibonacci sequence 0 and 1 first so can use it to be F(0) and F(1)
-fib_sequence = [0,1]
+#base case
+if n <= 1: return n (it will output f(0) = 0; f(1) = 1 )
 ||
-if loop len() > n it break
-while len(fib_sequence) = 2 < n=5
+#recursion case
+else: 
+return f(n-1) + f(n-2)
 ||
+
+
+call f(5)
+||
+skip the if condition
+||
+f(5) = f(4) + f(3)
+||
+call f(4)  || call f(3)
+||
+both skip the if condition
+||
+f(4) = f(3) + f(2) || f(3) = f(2) + f(1)
+||
+call f(3) || call f(2) || call f(2) || f(1) <= 1 => f(1) = 1
+||
+skip if condition
+||
+f(3) = f(2) + f(1) || f(2) = f(1) + f(0) || f(2) = f(1) + f(0)
+||
+###f(1) = 1 ; f(0) = 0
+||
+f(2) = 1 + 0 = 1
+||
+continue the recursion => go back up
+||
+f(3) = f(2) + f(1) = 1 + 1 = 2
+||
+f(4) = f(3) + f(1) = 2 + 1 = 3
+||
+f(5) = f(4) + f(3) = 3 + 2 = 5

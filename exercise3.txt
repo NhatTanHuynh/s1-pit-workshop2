@@ -1,0 +1,26 @@
+[666,999,1337,1234]
+the worst case is pivot = 1337
+=> because it a large element => causing no element in the tight side 
+=> unbalance => time complex O(n^2)
+
+
+[15, 25, 35, 45, 55, 65, 75]
+the worst case are pivot = 75 and pivot = 15
+=> unbalance => few or no elements on other side, so the time complex in this array is O(n^2)
+
+
+decreasing sort:
+[666,99,1337,1234]
+algorithm:
+x will in left if x > pivot
+x will in right if x < pivot
+||
+pivot = 1234
+[1337] | [1234] | [666,99]
+=============
+left sorted = [1337]
+=============
+pivot = 99
+[666] | [99] | []
+=============
+=> [1337,1234,666,99]
